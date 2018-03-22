@@ -1,0 +1,445 @@
+/*-------------------------------------
+||--------------Color Palette:---------
+Red 1: #f31e31
+Red 2: #f32a3d
+White:#f5f4f2
+Gray:#403d3b
+Black:#080808
+||
+-------------------------------------*/
+
+
+body{
+     background-color: #080808;
+     color:#f5f4f2;
+     align-content: center;
+     padding: 0px;
+     font: helvetica, ariel, san-serif;
+
+   }
+
+   main{
+      max-width: 1280px;
+      max-height: 3192px;
+   }
+
+   header{
+      background-color: #f31e31;
+      max-width: 1280px;
+      /*--max-height: 50px;--*/
+      /*--border: white 1px solid;--*/
+      padding: 0px;
+      margin: auto;
+      position:relative;
+   }
+
+   header::after{
+      content: '';
+      clear: both;
+      display: block;
+   }
+
+
+   @media only screen and (max-width: 600px) {
+
+      body{
+           background-color: #080808;
+           color:#f5f4f2;
+           align-content: center;
+           padding: 0px;
+           display: flex;
+           padding: 0px;
+           font-family: helvetica;
+
+         }
+
+         main{
+           max-width: 600px;
+           max-height: 3192px;
+           background-color:#080808;
+         }
+
+         header{
+           background-color: #f31e31;
+           max-width: 600px;
+           /*--max-height: 50px;--*/
+           /*--border: white 1px solid;--*/
+           padding: 0px;
+           margin: auto;
+           position:relative;
+         }
+
+         header::after{
+           content: '';
+           clear: both;
+           display: block;
+         }
+
+         /*-------------------------------------
+         | menubar site-nav
+         -------------------------------------*/
+
+      .menubar{
+         background-color: #f32a3d;
+         max-width: 600px;
+      /*border: white 1px solid;--*/
+         padding: 10px 0px 10px 15px;
+       }
+       .site-nav{
+          position:absolute;
+          top:63px;
+          right: 0;
+          background-color: #403d3b;
+        height:0px;
+        overflow: hidden;
+       }
+       .site-nav--open{
+          height: auto;
+       }
+       .site-nav li:first-child{
+          border-top: 1px solid #f5f4f2;
+       }
+       .site-nav ul{
+          margin:0;
+          padding:0;
+          list-style: none;
+       }
+
+       .site-nav li{
+          border-bottom: 1px solid #f5f4f2;
+
+       }
+
+       .site-nav li{
+          color:#f5f4f2;
+          display: block;
+          padding: 1em 3em;
+          text-decoration: none;
+       }
+       .site-nav a:hover,
+       .site-nav li:hover,
+       .site-nav li:focus{
+          background: #f32a3d;
+       }
+
+       .menu-toggle{
+          /*background: #403d3b;*/
+          padding: 21px;
+          position: absolute;
+          right: 3px;
+          top: 10px;
+          cursor: pointer;
+       }
+
+       .burguer-menu,
+       .burguer-menu::before,
+       .burguer-menu::after{
+          content:'';
+          display: block;
+          background: #f5f4f2;
+          height: 3px;
+          width: 2em;
+          border-radius: 3px;
+       }
+
+       .burguer-menu::before{
+          transform: translateY(-6px);
+       }
+
+       .burguer-menu::after{
+          transform: translateY(3px);
+       }/* End of nav---------*/
+
+
+       /*-------------------------------------
+       | img carousel
+       -------------------------------------*/
+      .main-slide{
+         width: 408px;
+         height: 250px;
+         overflow: hidden;
+      }
+
+      .main-slide2{
+         width: 408px;
+         height: 225px;
+         overflow: hidden;
+      }
+      .main-slide2 h2{
+         text-align: center;
+      }
+      .main-slide3{
+         width: 408px;
+         height: 435px;
+         overflow: hidden;
+      }
+
+      .main-slide3 h2{
+         text-align: center;
+      }
+
+      .main-slide4{
+         width: 408px;
+         height: 435px;
+         overflow: hidden;
+      }
+
+      .main-slide4 h2{
+         text-align: center;
+      }
+
+
+      /*-------------------------------------
+      | Info
+      -------------------------------------*/
+
+      .info{
+         flex-wrap:wrap;
+         text-align: center;
+
+      }
+
+      .titles{
+         font-size: 18px;
+         color:#403d3b;
+         background-color: #f5f4f2;
+      }
+
+      .gleen{
+         border: solid 4px #403d3b;
+         border-radius: 50px;
+         margin: auto;
+      }
+
+      .about-us p{
+         text-align: left;
+         font-size: 12px;
+      }
+
+      /*-------------------------------------
+      | Guitars
+      -------------------------------------*/
+
+      .guitars{
+         padding: 5px;
+         flex-wrap:wrap;
+         text-align: center;
+      }
+
+      .guitar p{
+         text-align: left;
+      }
+
+      .guitar h3{
+         color:#403d3b;
+         background-color: #f5f4f2;
+      }
+
+      /*-------------------------------------
+      | footer
+      -------------------------------------*/
+
+      .footer{
+         text-align: center;
+         background-color:#f31e31;
+         padding: 3px;
+      }
+
+
+}/*end of @media only screen and (max-width: 600px)*/
+
+
+ @media only screen and (max-width: 900px){
+
+    body{
+         background-color: #080808;
+         color:#f5f4f2;
+         align-content: center;
+         padding: 0px;
+         display: flex;
+         padding: 0px;
+         font-family: helvetica;
+
+       }
+
+       main{
+         max-width: 600px;
+         max-height: 3192px;
+         background-color:#080808;
+       }
+
+       header{
+         background-color: #f31e31;
+         max-width: 600px;
+         /*--max-height: 50px;--*/
+         /*--border: white 1px solid;--*/
+         padding: 0px;
+         margin: auto;
+         position:relative;
+       }
+
+       header::after{
+         content: '';
+         clear: both;
+         display: block;
+       }
+
+       /*-------------------------------------
+       | menubar site-nav
+       -------------------------------------*/
+
+    .menubar{
+       background-color: #f32a3d;
+       max-width: 900px;
+    /*border: white 1px solid;--*/
+       padding: 10px 0px 10px 15px;
+     }
+     .site-nav{
+        position:absolute;
+        top:63px;
+        right: 0;
+        background-color: #403d3b;
+
+     }
+     .site-nav--open{
+        height: auto;
+     }
+     .site-nav li:first-child{
+        border-top: 1px solid #f5f4f2;
+     }
+     .site-nav ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+     }
+
+     .site-nav li{
+        border-bottom: 1px solid #f5f4f2;
+
+     }
+
+     .site-nav li{
+        color:#f5f4f2;
+        display: block;
+        padding: 1em 3em;
+        text-decoration: none;
+     }
+     .site-nav a:hover,
+     .site-nav li:hover,
+     .site-nav li:focus{
+        background: #f32a3d;
+     }
+
+     .menu-toggle{
+        /*background: #403d3b;*/
+        padding: 21px;
+        position: absolute;
+        right: 3px;
+        top: 10px;
+        cursor: pointer;
+     }
+
+
+}/* End of nav---------*/
+
+
+     /*-------------------------------------
+     | img carousel
+     -------------------------------------*/
+    .main-slide{
+       width: 608px;
+       height: 450px;
+       overflow: hidden;
+    }
+
+    .main-slide2{
+       width: 408px;
+       height: 225px;
+       overflow: hidden;
+    }
+    .main-slide2 h2{
+       text-align: center;
+    }
+    .main-slide3{
+       width: 408px;
+       height: 435px;
+       overflow: hidden;
+    }
+
+    .main-slide3 h2{
+       text-align: center;
+    }
+
+    .main-slide4{
+       width: 408px;
+       height: 435px;
+       overflow: hidden;
+    }
+
+    .main-slide4 h2{
+       text-align: center;
+    }
+
+
+    /*-------------------------------------
+    | Info
+    -------------------------------------*/
+
+    .info{
+       flex-wrap:wrap;
+       text-align: center;
+
+    }
+
+    .titles{
+       font-size: 18px;
+       color:#403d3b;
+       background-color: #f5f4f2;
+    }
+
+    .gleen{
+       border: solid 4px #403d3b;
+       border-radius: 50px;
+       margin: auto;
+    }
+
+    .about-us p{
+       text-align: left;
+       font-size: 12px;
+    }
+
+    /*-------------------------------------
+    | Guitars
+    -------------------------------------*/
+
+    .guitars{
+       padding: 5px;
+       flex-wrap:wrap;
+       text-align: center;
+    }
+
+    .guitar p{
+       text-align: left;
+    }
+
+    .guitar h3{
+       color:#403d3b;
+       background-color: #f5f4f2;
+    }
+
+    /*-------------------------------------
+    | footer
+    -------------------------------------*/
+
+    .footer{
+       text-align: center;
+       background-color:#f31e31;
+       padding: 3px;
+    }
+
+
+    }/*end of @media only screen and (max-width: 600px)*/
